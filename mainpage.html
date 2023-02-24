@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="document.getElementById('name').focus()">
+    <div>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="fname">
+        <button onclick="eninlist()">enter</button>
+    </div>
+    <div>
+        <select name="sort" id="sort" onmousedown="this.value='';" onchange="sort(this.value);">
+            <option value=1 id="unsorted">unsorted</option>
+            <option value=2 id="sorted">sorted</option>
+        </select>
+    </div>
+    <div>
+        <h1>list</h1>
+        <ul id="disp">
+        </ul>
+    </div>
+    <script src="spt.js"></script>
+</body>
+</html>
